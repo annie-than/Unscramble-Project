@@ -2,15 +2,17 @@
 Calculate Big O
 ===============
 
-1. Task0.py:   O(14)
+1. Task0.py:   O(1)
+    The same number of lines will run 
 
-2. Task1.py:   O(2*n + 2*m + 2*(n+m) + 5) = O(4*n + 4*m + 5)
+2. Task1.py:   O(n)
 
-3. Task2.py:   O(11)
+3. Task2.py:   O(n)
 
-4. Task3.py:   O(8*n + 2*m)
+4. Task3.py:   O(nlog(n))
+   With built-in function sorting, time complexity of the worst case in Timsort is O(nlog(n))
 
-5. Task4.py:   O(2*n + 4*m)
+5. Task4.py:   O(n)
 
 
 

@@ -20,9 +20,19 @@ Print a message:
 September 2016.".
 """
 
-def take_ColumnFourth(elem):
-    return elem[:][3]
+phone_dic = {}
 
-calls.sort(key=take_ColumnFourth)
+for call in calls:
+    calling = call[0]
+    receiving = call[1]
+    calltime = int(call[3])
+    
+    phone_dic.setdefault(calling, 0)
+    phone_dic[calling] = phone_dic[calling] + calltime
+    phone_dic.setdefault(receiving, 0)
+    phone_dic[receiving] = phone_dic[receiving] + calltime
 
-print("{} and {} spend the longest time, {} seconds, on the phone during September 2016".format(calls[-1][0], calls[-1][1], calls[-1][3]))
+phone_num = max(phone_dic.items(), key = lambda x: x[1] )
+
+print("{} spent the longest time, {}, one the phone during September 2016".format(phone_num[0], phone_num[1]))
+

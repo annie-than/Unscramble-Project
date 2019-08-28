@@ -50,7 +50,7 @@ print("The numbers called by people in Bangalore have codes:")
 
 code_list = []
 for item in calls:
-    if item[0][0:5] == '(040)':
+    if item[0][0:5] == '(080)':
         if item[1][0:2] == '(0':
             for i in range(2,10):
                 if item[1][i] == ')':
