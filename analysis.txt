@@ -5,14 +5,14 @@ Calculate Big O
 1. Task0.py:   O(1)
     The same number of lines will run 
 
-2. Task1.py:   O(n)
+2. Task1.py:   O(nlog(n))
+   With built-in function sorting, time complexity of the worst case in Timsort is O(nlog(n))
 
 3. Task2.py:   O(n)
+    With for loop, time complexity depends on the length of input
 
 4. Task3.py:   O(nlog(n))
    With built-in function sorting, time complexity of the worst case in Timsort is O(nlog(n))
 
-5. Task4.py:   O(n)
-
-
-
+5. Task4.py:   O(n^4)
+    The time complexity here would be O(n^4) because of the for loop on line 42 in Task4.py and the nested 'if not in' type of conditionals in its body.In worst-case, the if conditionals would have to traverse the whole list to check if there is a match. So the outer for loops and the three nested 'if not in' conditionals make the complexity O(n^4).

@@ -40,11 +40,10 @@ for j in range(len(calls)):
     
 pos_tele = []
 for phone in call_cal_list:
-    if phone[0:3] != '140':
-        if phone not in call_rec_list:
-            if phone not in text_sen_list:
-                if phone not in text_rec_list:
-                    pos_tele.append(phone)
+    if phone not in call_rec_list:
+        if phone not in text_sen_list:
+            if phone not in text_rec_list:
+                pos_tele.append(phone)
 
 pos_tele.sort()
 
